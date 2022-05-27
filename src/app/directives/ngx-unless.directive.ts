@@ -15,7 +15,7 @@ export class NgxUnlessDirective {
   }
 
   @Input()
-  set ngxUnless(condition:boolean) {
+  set ngxUnless(condition: boolean) {
       if (!condition && !this.visible) {
           this.viewContainer.createEmbeddedView(this.templateRef);
           this.visible = true;
